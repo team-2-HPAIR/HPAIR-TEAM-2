@@ -3,24 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donate - SOMASOTE</title>
+    <title>Donate - Elevana</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <div class="navbar">
         <a href="index.html">Home</a>
-        <a href="dashboard.html">Dashboard</a>
+		<a href="dashboard.html">Dashboard</a>
         <a href="students.html">Students</a>
         <a href="volunteer.html">Volunteers</a>
+        <a href="donate.html">Donate</a>
         <a href="infrastructure.html">Infrastructure</a>
-        
     </div>
 
     <div class="hero">
-        <h1>Make a Difference</h1>
-        <p>Your contribution helps students build a better future</p>
+        <h1>Support Our Mission</h1>
+        <p>Choose a donation package or make a custom contribution.</p>
     </div>
 
+    <div class="donation-section">
+        <h2>Donation Packages</h2>
+        <div class="donation-container">
+            
+            <!-- Classroom Sponsor -->
+            <div class="donation-card">
+                <img src="classroom.jpg" alt="Classroom Sponsor">
+                <h3>Classroom Sponsor</h3>
+                <p>Support an entire classroom with essential supplies and equipment.</p>
+                <div class="price">$100 / month</div>
+                <ul>
+                    <li>Monthly progress reports</li>
+                    <li>Video calls with students</li>
+                    <li>Impact certificate</li>
+                </ul>
+                <button>Select Package</button>
+            </div>
+
+            <!-- Book Bundle -->
+            <div class="donation-card">
+                <img src="books.jpg" alt="Book Bundle">
+                <h3>Book Bundle</h3>
+                <p>Provide textbooks and materials for 10 students.</p>
+                <div class="price">$50 / month</div>
+                <ul>
+                    <li>Helps 10 students</li>
+                    <li>Books & materials provided</li>
+                    <li>Monthly updates</li>
+                </ul>
+                <button>Select Package</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Donation Form -->
+    <div class="custom-donation">
+        <h3>Make a Custom Donation</h3>
+        <input type="number" placeholder="Donation Amount ($)">
+        <input type="text" placeholder="Full Name">
+        <input type="email" placeholder="Email">
+        <button>Donate Now</button>
+    </div>
+	<footer>
+    <div class="footer-content">
+        <h2>Join Us in Making a Difference</h2>
+        <p>Your support helps change lives and build brighter futures.</p>
+        
+    </div>
+    <div class="footer-bottom">
+        &copy; 2025 SOMASOTE | All Rights Reserved
+    </div>
+</footer>
 </body>
 </html>

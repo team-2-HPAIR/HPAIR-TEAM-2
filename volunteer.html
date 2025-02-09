@@ -5,22 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Volunteers - SOMASOTE</title>
     <link rel="stylesheet" href="styles.css">
+	<style>
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-30px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+    from { opacity: 0; transform: translateX(30px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+</style>
 </head>
 <body>
 
     <div class="navbar">
         <a href="index.html">Home</a>
-        <a href="dashboard.html">Dashboard</a>
+		<a href="dashboard.html">Dashboard</a>
         <a href="students.html">Students</a>
+        <a href="volunteer.html">Volunteers</a>
         <a href="donate.html">Donate</a>
         <a href="infrastructure.html">Infrastructure</a>
+    </div>
+
+    <div class="hero" style="text-align: center; padding: 50px; background: linear-gradient(135deg, #f3f4f6, #e2e8f0); border-radius: 12px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); animation: fadeIn 1s ease-in-out;">
+    <h1 style="color: #0056b3; font-size: 2.5rem; margin-bottom: 10px; animation: slideInDown 1s ease-out;">Join as a Volunteer</h1>
+    <p style="color: #333; font-size: 1.2rem; margin-bottom: 30px; animation: fadeIn 1.2s ease-in-out;">At Elevana, we believe in the power of community and giving back. Become a volunteer and help us create meaningful change.</p>
+
+</div>
+<div class="hero">
+    <section id="membership" style="margin-bottom: 30px;">
+        <h2 style="color: #333; font-size: 2rem; animation: slideInRight 1s ease-in-out;">Become an Elevana Member</h2>
+        <p style="color: #555; font-size: 1.1rem; max-width: 600px; margin: auto;">Join our network of dedicated individuals who are committed to making a positive impact. As a member, you’ll gain access to exclusive events, resources, and opportunities.</p>
+        <button style="padding: 12px 25px; font-size: 1.2rem; font-weight: bold; color: white; background: linear-gradient(135deg, #007bff, #0056b3); border: none; border-radius: 8px; cursor: pointer; transition: all 0.4s ease-in-out; margin-top: 15px; box-shadow: 0 5px 15px rgba(0, 91, 187, 0.3);"
+            onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 10px 25px rgba(0, 91, 187, 0.4)';"
+            onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 5px 15px rgba(0, 91, 187, 0.3)';">
+            Learn More
+        </button>
+    </section>
+
+    <section id="application">
+        <h2 style="color: #333; font-size: 2rem; animation: slideInLeft 1s ease-in-out;">Submit a Volunteer Application</h2>
+        <p style="color: #555; font-size: 1.1rem; max-width: 600px; margin: auto;">Ready to get involved? Fill out our volunteer application form to start your journey with Elevana.</p>
+        <button style="padding: 12px 25px; font-size: 1.2rem; font-weight: bold; color: white; background: linear-gradient(135deg, #28a745, #1e7e34); border: none; border-radius: 8px; cursor: pointer; transition: all 0.4s ease-in-out; margin-top: 15px; box-shadow: 0 5px 15px rgba(40, 167, 69, 0.3);"
+            onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 10px 25px rgba(40, 167, 69, 0.4)';"
+            onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 5px 15px rgba(40, 167, 69, 0.3)';">
+            Apply Now
+        </button>
+    </section>
+</div>
+
+
+
+
+		<footer>
+    <div class="footer-content">
+        <h2>Join Us in Making a Difference</h2>
+        <p>Your support helps change lives and build brighter futures.</p>
         
     </div>
-
-    <div class="hero">
-        <h1>Join as a Volunteer</h1>
-        <p>Help us create a better future for students</p>
+    <div class="footer-bottom">
+        &copy; 2025 SOMASOTE | All Rights Reserved
     </div>
-
+</footer>
 </body>
 </html>
