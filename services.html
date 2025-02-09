@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Polysiatech Pvt Ltd</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background: linear-gradient(135deg, #0e0e0e, #1a1a1a); 
+            color: #fff; 
+            margin: 0; 
+            padding: 0; 
+        }
+        .navbar { 
+            position: fixed; 
+            top: 0; 
+            width: 100%; 
+            background: rgba(0, 0, 0, 0.85); 
+            padding: 15px 0; 
+            display: flex; 
+            justify-content: center; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+        .navbar a { 
+            color: #fff; 
+            text-decoration: none; 
+            margin: 0 20px; 
+            font-size: 1.1rem; 
+            font-weight: bold; 
+            transition: color 0.3s, transform 0.3s; 
+        }
+        .navbar a:hover { 
+            color: #00c3ff; 
+            transform: scale(1.1); 
+        }
+        .hero { 
+            background: url('cybersecurity-bg.jpg') no-repeat center center/cover; 
+            height: 60vh; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            position: relative; 
+        }
+        .hero::after { 
+            content: ''; 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            background: rgba(0, 0, 0, 0.6); 
+        }
+        .hero h1 { 
+            font-size: 3.5rem; 
+            z-index: 1; 
+            background: rgba(0, 0, 0, 0.7); 
+            padding: 20px 30px; 
+            border-radius: 15px; 
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+        }
+        .services { 
+            padding: 120px 20px 60px; 
+            max-width: 1200px; 
+            margin: auto; 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 30px; 
+        }
+        h2 { 
+            font-size: 2.8rem; 
+            color: #00c3ff; 
+            margin-bottom: 40px; 
+            text-align: center; 
+        }
+        p { 
+            font-size: 1.1rem; 
+            line-height: 1.8; 
+        }
+        .service-box { 
+            background: rgba(255, 255, 255, 0.1); 
+            padding: 30px; 
+            border-radius: 15px; 
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5); 
+            transition: transform 0.3s, background 0.3s; 
+        }
+        .service-box:hover { 
+            transform: translateY(-10px); 
+            background: rgba(0, 195, 255, 0.1); 
+        }
+        .service-box h3 { 
+            font-size: 1.8rem; 
+            color: #00c3ff; 
+            margin-bottom: 15px; 
+        }
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; padding: 15px 20px; }
+            .navbar a { font-size: 1rem; margin: 0 10px; }
+            h2 { font-size: 2.2rem; }
+            .service-box h3 { font-size: 1.6rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="careers.html">Careers</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <div class="hero">
+        <h1>Cutting-Edge Cybersecurity & AI Solutions</h1>
+    </div>
+    <div class="services">
+        
+        <div class="service-box">
+            <h3>AI-Powered Threat Detection</h3>
+            <p>Real-time analysis and mitigation of cyber threats using AI-driven insights.</p>
+        </div>
+        <div class="service-box">
+            <h3>Cloud Security Solutions</h3>
+            <p>Securing cloud environments to protect data from breaches and unauthorized access.</p>
+        </div>
+        <div class="service-box">
+            <h3>Cyber Risk Assessment</h3>
+            <p>Identifying vulnerabilities and providing strategic solutions to mitigate risks.</p>
+        </div>
+        <div class="service-box">
+            <h3>Penetration Testing</h3>
+            <p>Simulated cyberattacks to evaluate the resilience of your security infrastructure.</p>
+        </div>
+        <div class="service-box">
+            <h3>Data Encryption & Protection</h3>
+            <p>Implementing cutting-edge encryption to secure sensitive business data.</p>
+        </div>
+        <div class="service-box">
+            <h3>Security Compliance Consulting</h3>
+            <p>Ensuring businesses meet industry standards and regulatory compliance.</p>
+        </div>
+    </div>
+</body>
+</html>
